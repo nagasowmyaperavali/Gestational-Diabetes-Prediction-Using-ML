@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diabetes Prediction</title>
+     <link rel="icon" type="image/png" href="static/myproject/images/bg.png">
+    <style >
+        .form input[type="text"]{
+
+         border-radius:10px;
+         padding:5px;
+
+        }
+         .form input[type="number"]{
+         border-radius:10px;
+         padding:5px;
+
+        }
+        .form td{
+        font-weight:bold;
+        }
+
+        body{
+
+
+       background-image:linear-gradient(to right,#f7f8f8,#acbb78);
+
+        }
+
+        .main{
+        height:400px;
+        width:400px;
+        position:fixed;
+        top:70px;
+        left:380px;
+        background-image:linear-gradient(to right,#ffeeee,#ddefbb);
+        border-radius:14px;
+        align-items:center;
+        padding:5%;
+        box-shadow: 5px 10px 18px #888888;
+}
+        h1{
+        color:#4dc3ff;
+        font-size:30px;
+        font-weight:bold;
+        }
+        input[type=submit]{
+        background-color:#4dc3ff;
+        border:2px;
+        color:white;
+        padding:8px 16px;
+        cursor:pointer;
+        margin-top:15px;
+        }
+        result{
+        margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+<div align="center" class="main" >
+    <h1 >Enter The Information</h1>
+    <form action="result" class="form">
+        <table >
+            <tr>
+              <td align="right" min="1" max="26" >Pregnancy Period[weeks]:</td>
+                <td align="left"><input type="number" name="n1"> </td>
+            </tr>
+            <tr>
+              <td align="right">Glucose:</td>
+                <td align="left"><input type="number" name="n2"> </td>
+            </tr>
+            <tr>
+              <td align="right">Blood Pressure:</td>
+                <td align="left"><input type="number" name="n3"> </td>
+            </tr>
+            <tr>
+              <td align="right">Skin Thickness:</td>
+                <td align="left"><input type="number" name="n4"> </td>
+            </tr>
+            <tr>
+              <td align="right">Insulin:</td>
+                <td align="left"><input type="number" name="n5"> </td>
+            </tr>
+            <tr>
+              <td align="right">BMI:</td>
+                <td align="left"><input type="text" name="n6"> </td>
+            </tr>
+            <tr>
+              <td align="right">Diabetes Pedigree function:</td>
+                <td align="left"><input type="text" name="n7"> </td>
+            </tr>
+            <tr>
+              <td align="right">Age:</td>
+                <td align="left"><input type="number" name="n8"> </td>
+            </tr>
+        </table>
+        <input  type="submit">
+    </form>
+    <div class="result" style="font-weight:bold">
+    <br/>Result: {{result2}}
+    </div>
+</div>
+</body>
+</html>
